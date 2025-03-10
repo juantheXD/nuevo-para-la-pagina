@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('background.jpg'); /* Imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+header {
+    background-color: rgba(211, 47, 47, 0.9);
+    color: white;
+    padding: 20px;
+}
+
+.titulo {
+    font-size: 2.5em;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+
+.creadores-link {
+    color: white;
+    font-size: 1.2em;
+    text-decoration: none;
+    display: block;
+    margin-top: 10px;
+}
+
+.creadores-link:hover {
+    text-decoration: underline;
+}
+
+.seccion {
+    background: white;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 15px;
+    width: 80%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form input, form textarea, form button {
+    width: 80%;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+form textarea {
+    resize: none; /* Evita que el usuario modifique el tamaño manualmente */
+    overflow: hidden; /* Oculta la barra de desplazamiento */
+}
+
+form button {
+    background-color: #d32f2f;
+    color: white;
+    font-size: 1.2em;
+    border: none;
+    cursor: pointer;
+}
+
+/* Estilos del carrusel */
+.carousel {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel img {
+    width: 100%;
+    height: auto;
+    object-fit: contain; /* Muestra la imagen completa sin cortes */
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.carousel img.active {
+    opacity: 1; /* Solo la imagen activa se muestra */
+    position: relative;
+}
+
+/* Estilos de los botones del carrusel */
+.carousel button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 2rem;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 5px;
+}
+
+.carousel .prev {
+    left: 10px;
+}
+
+.carousel .next {
+    right: 10px;
+}
+
+.carousel button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Estilos de la lista de experiencias */
+#lista-experiencias {
+    text-align: left;
+    padding: 10px;
+    max-width: 80%;
+    margin: auto;
+}
+
+.experiencia {
+    background-color: #eee;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+}
