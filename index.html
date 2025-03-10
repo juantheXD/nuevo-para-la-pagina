@@ -1,108 +1,121 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Comunidad VIH</title>
-    <link rel="stylesheet" href="styles.css">
-    <script defer src="script.js"></script>
-</head>
-<body>
-    <header>
-        <h1 class="titulo">Bienvenidos a la Comunidad VIH</h1>
-        <p>Un espacio para compartir experiencias y recibir apoyo</p>
-        <a href="creadores.html" class="creadores-link">Conoce a los creadores</a>
-    </header>
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Comunidad VIH</title>
+        <link rel="stylesheet" href="styles.css">
+        <script defer src="script.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1 class="titulo">Bienvenidos a la Comunidad VIH</h1>
+            <p>Un espacio para compartir experiencias y recibir apoyo</p>
+            <a href="creadores.html" class="creadores-link">Conoce a los creadores</a>
+        </header>
 
-    <section class="seccion" id="que-es">
-        <h2>¿Qué es esta página?</h2>
-        <p>Esta página es una comunidad en línea dedicada a brindar apoyo y orientación a personas afectadas por el VIH. Aquí los usuarios pueden compartir sus experiencias personales en un espacio seguro y recibir el apoyo de otros que han pasado por situaciones similares.
-            La plataforma permite conectar con organizaciones que ofrecen ayuda médica, psicológica y social, facilitando el acceso a recursos importantes. Además, cuenta con foros y debates donde se pueden resolver dudas y encontrar apoyo mutuo, fomentando un ambiente de comprensión y solidaridad.
-        </p>
-        <div class="carousel">
-            <button class="prev">&#10094;</button> <!-- Botón izquierda -->
-            <img src="img1.jpg" class="carousel-image active" alt="Imagen 1">
-            <img src="img2.jpg" class="carousel-image" alt="Imagen 2">
-            <img src="img3.jpg" class="carousel-image" alt="Imagen 3">
-            <button class="next">&#10095;</button> <!-- Botón derecha -->
-        </div>        
-    </section>
+        <section class="seccion" id="que-es">
+            <h2>¿Qué es esta página?</h2>
+            <p>Esta página es una comunidad en línea dedicada a brindar apoyo y orientación a personas afectadas por el VIH. Aquí los usuarios pueden compartir sus experiencias personales en un espacio seguro y recibir el apoyo de otros que han pasado por situaciones similares.
+                La plataforma permite conectar con organizaciones que ofrecen ayuda médica, psicológica y social, facilitando el acceso a recursos importantes. Además, cuenta con foros y debates donde se pueden resolver dudas y encontrar apoyo mutuo, fomentando un ambiente de comprensión y solidaridad.
+            </p>
+            <div class="carousel">
+                <button class="prev">&#10094;</button>
+                <img src="img1.jpg" class="carousel-image active" alt="Imagen 1">
+                <img src="img2.jpg" class="carousel-image" alt="Imagen 2">
+                <img src="img3.jpg" class="carousel-image" alt="Imagen 3">
+                <button class="next">&#10095;</button>
+            </div>        
+        </section>
 
-    <section class="seccion" id="experiencias">
-        <h2>Comparte tu experiencia</h2>
-        <form id="form-experiencia">
-            <input type="text" id="nombre" placeholder="Tu nombre" required>
-            <textarea id="mensaje" placeholder="Escribe tu experiencia aquí..." required></textarea>
-            <button type="submit">Enviar</button>
-        </form>
-    </section>
+        <section class="seccion" id="experiencias">
+            <h2>Comparte tu experiencia</h2>
+            <form id="form-experiencia">
+                <input type="text" id="nombre" placeholder="Tu nombre" required>
+                <textarea id="mensaje" placeholder="Escribe tu experiencia aquí..." required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
 
-    <section class="seccion" id="experiencias-publicadas">
-        <h2>Experiencias de la comunidad</h2>
-        <div id="contador-experiencias" class="contador">Experiencias publicadas: 0</div>
-        <div id="lista-experiencias">
-            <p>No hay experiencias publicadas aún.</p>
-        </div>
-    </section>
-    
-    <section class="seccion" id="preguntas-frecuentes">
-        <h2>Preguntas Frecuentes sobre el VIH</h2>
-    <div style="text-align: left;">
-            <li><strong>🔬 ¿Cómo funciona?</strong> El VIH entra en el cuerpo a través de fluidos como la sangre, el semen, los fluidos vaginales y la leche materna.
-                Infecta los linfocitos CD4, los usa para replicarse y luego los destruye.
-                Debilita el sistema inmunológico, dejando al cuerpo vulnerable a infecciones y enfermedades graves.</li>
-                <br>
-            <li><strong>⚠️ ¿Cómo se transmite?</strong></li>
-                <br>✅ Relaciones sexuales sin protección</br>
-                <br>✅ Compartir agujas o jeringas</br>
-                <br>✅ Transfusiones de sangre (muy raro hoy en día por los controles)</br>
-                <br>✅ De madre a hijo durante el embarazo, parto o lactancia</br>
-                <br>📌 NO se transmite por abrazos, besos, sudor, lágrimas, compartir utensilios o estar cerca de una persona con VIH.</br>
-                <br>
-            <li><strong>💊 ¿Tiene cura?</strong> No, pero sí tiene tratamiento. Los medicamentos antirretrovirales (TAR) permiten que las personas con VIH tengan una vida larga y saludable, manteniendo el virus bajo control y reduciendo el riesgo de transmisión.</li>
-            <br>
-            <li><strong>🦠 ¿Es lo mismo que el SIDA?</strong> El VIH es el virus, mientras que el SIDA (Síndrome de Inmunodeficiencia Adquirida) es la etapa avanzada de la infección, cuando el sistema inmunológico ya está gravemente dañado.
-                Con tratamiento adecuado (antirretrovirales), el VIH puede controlarse y evitar que llegue a SIDA.</li>
-            <br>
-            <li><strong>Carga Viral Indetectable = Intransmisible (I=I)</strong></li>
-                <br>Cuando una persona con VIH sigue correctamente su tratamiento con antirretrovirales (TAR), la cantidad de virus en su sangre puede reducirse a niveles indetectables en pruebas estándar.</br>
-                <br>📌 ¿Qué significa esto?</br>
-                <br>✅ No desarrolla SIDA.</br>
-                <br>✅ Su sistema inmunológico se mantiene fuerte.</br>
-                <br>✅ No puede transmitir el virus a otras personas, ni siquiera por vía sexual.</br>
-                <br>🔬 Este concepto, conocido como "Indetectable = Intransmisible (I=I)", está científicamente probado y es una de las mayores revoluciones en la lucha contra el VIH.</br>
-                <br>💡 En resumen: Con el tratamiento adecuado, una persona con VIH puede llevar una vida normal y sin riesgo de transmitir el virus.</br>
-        </ul>
-    </section>
-    </div>
-    <section class="seccion" id="empresas">
-        <h2>Empresas que ayudan a personas con VIH</h2>
-        <p>Estas organizaciones brindan apoyo y recursos a personas con VIH:</p>
-        <ul>
-            <div style="text-align: left;">
-            <li><a href="https://abd.ong/">Asociación Bienestar y Desarrollo (ABD)</a></li>
-            <br>ONG española que trabaja en la prevención del VIH/sida, atención sociosanitaria y apoyo a personas en riesgo de exclusión social.</br>
-            <br>
-            <li><a href="https://huesped.org.ar/">Fundación Huésped</a></li>
-            <br>Organización argentina dedicada a la investigación, prevención y tratamiento del VIH/sida, además de promover políticas públicas relacionadas con la salud sexual y reproductiva.</br>
-            <br>
-            <li><a href="https://cogam.es/">COGAM (Colectivo LGTB+ de Madrid)</a></li>
-            <br>Asociación en Madrid que, entre otras actividades, ofrece servicios de prevención y apoyo a personas con VIH, incluyendo asesoramiento y pruebas rápidas.</br>
-            <br>
+        <section class="seccion" id="experiencias-publicadas">
+            <h2>Experiencias de la comunidad</h2>
+            <div id="contador-experiencias" class="contador">Experiencias publicadas: 2</div>
+        
+            <!-- Experiencias fijas -->
+            <div class="experiencia fija">
+                <strong>María López:</strong>
+                <p>Ser parte de esta comunidad me ha ayudado a encontrar apoyo y a sentirme comprendida. ¡Gracias a todos!</p>
             </div>
-        </ul>
+            <div class="experiencia fija">
+                <strong>Carlos Martínez:</strong>
+                <p>Al principio tenía miedo, pero aquí encontré personas maravillosas que me han guiado y apoyado en mi camino.</p>
+            </div>
+        
+            <!-- Contenedor donde se agregan las nuevas experiencias -->
+            <div id="lista-experiencias">
+                <p>No hay experiencias publicadas aún.</p>
+            </div>
+        </section>
+        
+        <section class="seccion" id="preguntas-frecuentes">
+            <h2>Preguntas Frecuentes sobre el VIH</h2>
+        <div style="text-align: left;">
+                <li><strong>🔬 ¿Cómo funciona?</strong> El VIH entra en el cuerpo a través de fluidos como la sangre, el semen, los fluidos vaginales y la leche materna.
+                    Infecta los linfocitos CD4, los usa para replicarse y luego los destruye.
+                    Debilita el sistema inmunológico, dejando al cuerpo vulnerable a infecciones y enfermedades graves.</li>
+                    <br>
+                <li><strong>⚠️ ¿Cómo se transmite?</strong></li>
+                    <br>✅ Relaciones sexuales sin protección</br>
+                    <br>✅ Compartir agujas o jeringas</br>
+                    <br>✅ Transfusiones de sangre (muy raro hoy en día por los controles)</br>
+                    <br>✅ De madre a hijo durante el embarazo, parto o lactancia</br>
+                    <br>📌 NO se transmite por abrazos, besos, sudor, lágrimas, compartir utensilios o estar cerca de una persona con VIH.</br>
+                    <br>
+                <li><strong>💊 ¿Tiene cura?</strong> No, pero sí tiene tratamiento. Los medicamentos antirretrovirales (TAR) permiten que las personas con VIH tengan una vida larga y saludable, manteniendo el virus bajo control y reduciendo el riesgo de transmisión.</li>
+                <br>
+                <li><strong>🦠 ¿Es lo mismo que el SIDA?</strong> El VIH es el virus, mientras que el SIDA (Síndrome de Inmunodeficiencia Adquirida) es la etapa avanzada de la infección, cuando el sistema inmunológico ya está gravemente dañado.
+                    Con tratamiento adecuado (antirretrovirales), el VIH puede controlarse y evitar que llegue a SIDA.</li>
+                <br>
+                <li><strong>Carga Viral Indetectable = Intransmisible (I=I)</strong></li>
+                    <br>Cuando una persona con VIH sigue correctamente su tratamiento con antirretrovirales (TAR), la cantidad de virus en su sangre puede reducirse a niveles indetectables en pruebas estándar.</br>
+                    <br>📌 ¿Qué significa esto?</br>
+                    <br>✅ No desarrolla SIDA.</br>
+                    <br>✅ Su sistema inmunológico se mantiene fuerte.</br>
+                    <br>✅ No puede transmitir el virus a otras personas, ni siquiera por vía sexual.</br>
+                    <br>🔬 Este concepto, conocido como "Indetectable = Intransmisible (I=I)", está científicamente probado y es una de las mayores revoluciones en la lucha contra el VIH.</br>
+                    <br>💡 En resumen: Con el tratamiento adecuado, una persona con VIH puede llevar una vida normal y sin riesgo de transmitir el virus.</br>
+            </ul>
+        </section>
         </div>
-        <div class="carousel">
-            <button class="prev">&#10094;</button>
-            <img src="img4.png" class="carousel-image" alt="Imagen 7">
-            <img src="img5.png" class="carousel-image" alt="Imagen 8">
-            <img src="img6.png" class="carousel-image" alt="Imagen 9">
-            <button class="next">&#10095;</button>
-        </div>
-    </section>
+        <section class="seccion" id="empresas">
+            <h2>Empresas que ayudan a personas con VIH</h2>
+            <p>Estas organizaciones brindan apoyo y recursos a personas con VIH:</p>
+            <ul>
+                <div style="text-align: left;">
+                <li><a href="https://abd.ong/">Asociación Bienestar y Desarrollo (ABD)</a></li>
+                <br>ONG española que trabaja en la prevención del VIH/sida, atención sociosanitaria y apoyo a personas en riesgo de exclusión social.</br>
+                <br>
+                <li><a href="https://huesped.org.ar/">Fundación Huésped</a></li>
+                <br>Organización argentina dedicada a la investigación, prevención y tratamiento del VIH/sida, además de promover políticas públicas relacionadas con la salud sexual y reproductiva.</br>
+                <br>
+                <li><a href="https://cogam.es/">COGAM (Colectivo LGTB+ de Madrid)</a></li>
+                <br>Asociación en Madrid que, entre otras actividades, ofrece servicios de prevención y apoyo a personas con VIH, incluyendo asesoramiento y pruebas rápidas.</br>
+                <br>
+                </div>
+            </ul>
+            </div>
+            <div class="carousel">
+                <button class="prev">&#10094;</button>
+                <img src="img4.png" class="carousel-image" alt="Imagen 7">
+                <img src="img5.png" class="carousel-image" alt="Imagen 8">
+                <img src="img6.png" class="carousel-image" alt="Imagen 9">
+                <button class="next">&#10095;</button>
+            </div>
+        </section>
 
-    <footer>
-        <p>&copy; 2025 Comunidad VIH - Todos los derechos reservados.</p>
-    </footer>
-</body>
-</html>
+        <footer>
+            <br>"No puedes contraer el VIH por dar la mano, abrazar o compartir un vaso con alguien. Pero puedes transmitir amor y apoyo con solo un gesto." – Diana, Princesa de Gales".
+            <p>&copy; 2025 Comunidad VIH - Todos los derechos reservados.</p>
+        </footer>
+    </body>
+    </html>

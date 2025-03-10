@@ -4,7 +4,7 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url('background.png'); /* Imagen de fondo */
+    background-image: url('background.png'); 
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -53,8 +53,8 @@ form input, form textarea, form button {
 }
 
 form textarea {
-    resize: none; /* Evita que el usuario modifique el tamaño manualmente */
-    overflow: hidden; /* Oculta la barra de desplazamiento */
+    resize: none; 
+    overflow: hidden; 
 }
 
 form button {
@@ -65,7 +65,6 @@ form button {
     cursor: pointer;
 }
 
-/* Estilos del carrusel */
 .carousel {
     display: flex;
     overflow: hidden;
@@ -79,18 +78,17 @@ form button {
 .carousel img {
     width: 25%;
     height: auto;
-    object-fit: contain; /* Muestra la imagen completa sin cortes */
+    object-fit: contain; 
     position: absolute;
     opacity: 0;
     transition: opacity 1s ease-in-out;
 }
 
 .carousel img.active {
-    opacity: 1; /* Solo la imagen activa se muestra */
+    opacity: 1; 
     position: relative;
 }
 
-/* Estilos de los botones del carrusel */
 .carousel button {
     position: absolute;
     top: 50%;
@@ -117,7 +115,6 @@ form button {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* Estilos de la lista de experiencias */
 #lista-experiencias {
     text-align: left;
     padding: 10px;
@@ -132,7 +129,14 @@ form button {
     border-radius: 10px;
 }
 
-/* ---- NUEVO: Estilos de la sección de Creadores ---- */
+/* Estilos para experiencias fijas */
+.experiencia.fija {
+    background-color: #eee; /* Rojo suave */
+    color: black;
+    font-weight: bold;
+    border-left: 5px solid #eee;
+}
+
 .creadores-container {
     display: flex;
     flex-wrap: wrap;
@@ -150,7 +154,6 @@ form button {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Imagen de cada creador */
 .creador img {
     width: 100%;
     height: auto;
@@ -159,13 +162,11 @@ form button {
     max-height: 250px;
 }
 
-/* Espaciado para nombres */
 .creador p {
     margin-top: 10px;
     font-size: 1.1em;
 }
 
-/* ---- NUEVO: Estilos de la sección de Contacto de la Empresa ---- */
 #contacto {
     text-align: center;
     margin-top: 30px;

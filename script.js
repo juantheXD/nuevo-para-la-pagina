@@ -10,37 +10,32 @@ document.addEventListener("DOMContentLoaded", function () {
         if (images.length > 0) {
             images[index].classList.add("active");
 
-            // Cambio automático cada 3 segundos
             let autoChange = setInterval(() => {
                 changeImage(1);
             }, 3000);
 
-            // Función para cambiar imagen manualmente
             function changeImage(direction) {
                 images[index].classList.remove("active");
                 index = (index + direction + images.length) % images.length;
                 images[index].classList.add("active");
             }
 
-            // Botón anterior
             if (prevButton) {
                 prevButton.addEventListener("click", () => {
-                    clearInterval(autoChange); // Detiene el cambio automático al interactuar
+                    clearInterval(autoChange); 
                     changeImage(-1);
                 });
             }
 
-            // Botón siguiente
             if (nextButton) {
                 nextButton.addEventListener("click", () => {
-                    clearInterval(autoChange); // Detiene el cambio automático al interactuar
+                    clearInterval(autoChange); 
                     changeImage(1);
                 });
             }
         }
     });
 
-    // Ajustar el tamaño del textarea dinámicamente
     const textarea = document.getElementById("mensaje");
     if (textarea) {
         textarea.addEventListener("input", function () {
@@ -49,11 +44,10 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    // Capturar y mostrar experiencias enviadas con contador
     const form = document.getElementById("form-experiencia");
     const listaExperiencias = document.getElementById("lista-experiencias");
     const contadorExperiencias = document.getElementById("contador-experiencias");
-    let contador = 0;
+    let contador = 2; // Se inicia en 2 porque ya hay dos experiencias fijas
 
     if (form) {
         form.addEventListener("submit", function (event) {
